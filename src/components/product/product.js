@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./product.css";
 
 const Product = (props) => {
@@ -14,7 +15,13 @@ const Product = (props) => {
         </p>
         <p>${props.product.price}</p>
         <br />
-        <p>{props.product.stock}</p>
+        <p>{props.product.stock}only left in stock-order soon</p>
+        <button
+          className="main-button"
+          onClick={() => props.handleAddProduct(props.product)}
+        >
+          Add to cart
+        </button>
       </div>
     </div>
   );
