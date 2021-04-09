@@ -10,6 +10,7 @@ const Shop = () => {
 
   const handleAddProduct = () => {
     const newChart = [...cart];
+    setCart(newChart);
   };
   return (
     <div class="shop-container">
@@ -23,6 +24,7 @@ const Shop = () => {
       </div>
       <div class="cart-container">
         <h3>This is cart </h3>
+        <h5>order summery </h5>
       </div>
     </div>
   );
